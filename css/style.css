@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body{
+    background-color: #FFF5E2;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* header  */
+header{
+    height: 8vw;
+    width: 100%;
+    background-color: #FDBC41;
+}
+
+#title{
+    font-size: 1em;
+    font-weight: 700;
+    padding-left: 0.4em;
+}
+
+header img{
+    height: 100%;
+    width: 100%;
+    margin-top: -10px;
+    margin-left: 30px;
+    object-fit: contain;
+}
+
+/* fine header  */
+/* main  */
+
+main{
+    background-color: white;
+    min-height: 70vh;
+    width: 100%;
+}
+
+/* nameBurger  */
+
+.container-name-burger{
+    padding: 35px;
+}
+
+h3{
+    padding-left: 35px;
+    padding-bottom: 20px;
+}
+
+::placeholder{
+    color: grey;
+    font-weight: 500;
+}
+
+.name-burger input{
+    border: none;
+    font-size: 1em;
+}
+
+/* ingredients  */
+.features{
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.text-img{
+    font-size: 0.8em;
+}
+
+.add{
+    color: red;
+}
+/* coupon */
+.coupon{
+    font-size: 0.7em;
+    margin-top: 50px;
+}
+
+.code-discount input{
+    background-color: #FFF5E2;
+    border: none;
+    width: 120px;
+}
+/* calculate  */
+
+#calculate,
+#annulla{
+    background-color: #FDBC41;
+    line-height: 1.2em;
+    border-radius: 8px;
+    border: none;
+    padding: 0.6em;
+    width: 140px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#annulla{
+    display: none;
+}
+
+/* footer  */
+footer{
+    background-color: #D2325A;
+    color: white;
+    height: 80px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/* MEDIA QUERY */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    header img{
+        margin-top: -15px;
+        margin-left: 32px;
+    }
+    #title{
+        font-size: 1.4em;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    header img{
+        margin-top: -15px;
+        margin-left: 40px;
+    }
+    #title{
+        font-size: 1.4em;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    #title{
+        font-size: 1.8em;
+        padding-left: 0.4em;
+    }
+    
+    header img{
+        margin-top: -30px;
+        margin-left: 50px;
+    }
+
+    .features{
+        width: calc(90%/2);        
+    }
+
+    .name-burger input{
+        font-size: 1.5em;
+    }
+    .code-discount input{
+        width: 400px;
+    }
+    .text-img{
+        font-size: 1em;
+    }
+    .coupon{
+        font-size: 1.1em;
+        margin-top: 30%;
+        padding-left: 1em;
+    }
+    
+}
